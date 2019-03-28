@@ -1,2 +1,2 @@
-# paulo.ferreira.github.io
+# Paulo Ferreira
 Minha primeira página github
