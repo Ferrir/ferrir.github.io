@@ -1,20 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paulo Alexandre Ferreira | Senior Backend Developer</title>
-    <meta name="description" content="Portfolio profissional de Paulo Alexandre Ferreira, desenvolvedor backend sênior especialista em .NET, C# e Azure.">
+    <meta name="description"
+        content="Portfolio profissional de Paulo Alexandre Ferreira, desenvolvedor backend sênior especialista em .NET, C# e Azure.">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <div class="container">
             <nav>
                 <div class="logo">PAULO_ALEXANDRE_FERREIRA.EXE</div>
-                <div class="contact-links" style="display: flex; gap: 1rem;">
-                    <a href="mailto:ferreira.alexandre@gmail.com" class="headline" style="font-size: 0.8rem; margin: 0;">EMAIL</a>
-                    <a href="https://wa.me/5551998240505" target="_blank" class="headline" style="font-size: 0.8rem; margin: 0;">WHATSAPP</a>
+                <div style="display: flex; align-items: center; gap: 2rem;">
+                    <div class="lang-switcher" style="display: flex; gap: 0.8rem; align-items: center;">
+                        <button id="btn-en" class="lang-btn active" title="English">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 60 30">
+                                <path d="M0,0 v30 h60 v-30 z" fill="#012169" />
+                                <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6" />
+                                <path d="M0,0 L60,30 M60,0 L0,30" stroke="#C8102E" stroke-width="4" />
+                                <path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10" />
+                                <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6" />
+                            </svg>
+                        </button>
+                        <button id="btn-pt" class="lang-btn" title="Português">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 720 504">
+                                <rect width="720" height="504" fill="#009c3b" />
+                                <path d="M360 72L648 252 360 432 72 252z" fill="#ffdf00" />
+                                <circle cx="360" cy="252" r="105" fill="#002776" />
+                                <path
+                                    d="M255 252c0 58 47 105 105 105s105-47 105-105c0-11-2-21-5-31-31 16-67 25-105 25s-74-9-105-25c-3 10-5 20-5 31z"
+                                    fill="#fff" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="contact-links" style="display: flex; gap: 1.5rem;">
+                        <a href="mailto:ferreira.alexandre@gmail.com" class="headline"
+                            style="font-size: 0.8rem; margin: 0; display: flex; align-items: center; gap: 0.5rem;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            EMAIL
+                        </a>
+                        <a href="https://www.linkedin.com/in/paulo-alexandre-ferreira/" target="_blank" class="headline"
+                            style="font-size: 0.8rem; margin: 0; display: flex; align-items: center; gap: 0.5rem;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                            LINKEDIN
+                        </a>
+                    </div>
+
+
+
                 </div>
             </nav>
         </div>
@@ -22,46 +60,84 @@
 
     <main>
         <section class="hero container">
-            <div class="headline reveal">SENIOR BACKEND DEVELOPER</div>
+            <div id="hero-headline" class="headline reveal">SENIOR BACKEND DEVELOPER</div>
             <h1 id="user-name" class="reveal">PAULO<br>ALEXANDRE<br>FERREIRA</h1>
-            <p id="user-summary" class="reveal" style="max-width: 600px; font-size: 1.2rem; margin-top: 2rem;"></p>
+            <p id="user-summary" class="reveal" style="max-width: 800px; font-size: 1.2rem; margin-top: 2rem;">
+            </p>
+
         </section>
 
         <section id="experience" class="container">
-            <h2 class="section-title reveal">EXPERIÊNCIA</h2>
+            <h2 id="title-experience" class="section-title reveal">EXPERIÊNCIA</h2>
             <div id="experience-grid" class="exp-grid">
                 <!-- Injected via JS -->
             </div>
         </section>
 
         <section id="skills" class="container">
-            <h2 class="section-title reveal">COMPETÊNCIAS</h2>
+            <h2 id="title-skills" class="section-title reveal">COMPETÊNCIAS</h2>
             <div id="skills-list" class="skills-list">
                 <!-- Injected via JS -->
             </div>
         </section>
 
-        <section id="education" class="container" style="border-bottom: none;">
-            <h2 class="section-title reveal">FORMAÇÃO</h2>
+        <section id="education" class="container">
+            <h2 id="title-education" class="section-title reveal">FORMAÇÃO</h2>
             <div id="education-list">
+                <!-- Injected via JS -->
+            </div>
+        </section>
+
+        <section id="certifications" class="container">
+            <h2 id="title-certifications" class="section-title reveal">CERTIFICAÇÕES</h2>
+            <div id="certifications-list" class="exp-grid">
+                <!-- Injected via JS -->
+            </div>
+        </section>
+
+        <section id="courses" class="container">
+            <h2 id="title-courses" class="section-title reveal">CURSOS</h2>
+            <div id="courses-list" class="skills-list">
+                <!-- Injected via JS -->
+            </div>
+        </section>
+
+        <section id="languages" class="container" style="border-bottom: none;">
+            <h2 id="title-languages" class="section-title reveal">IDIOMAS</h2>
+            <div id="languages-list" class="skills-list">
                 <!-- Injected via JS -->
             </div>
         </section>
     </main>
 
+
     <footer style="padding: 4rem 0; border-top: var(--border);">
         <div class="container" style="display: flex; justify-content: space-between; align-items: flex-end;">
             <div>
-                <p style="font-family: var(--font-mono); font-size: 0.8rem; opacity: 0.5;">© 2026 PAULO ALEXANDRE FERREIRA</p>
-                <p style="font-family: var(--font-mono); font-size: 0.8rem; opacity: 0.5;">BUILT WITH VITE + VANILLA JS</p>
+                <p style="font-family: var(--font-mono); font-size: 0.8rem; opacity: 0.5;">© 2026 PAULO ALEXANDRE
+                    FERREIRA</p>
+                <p style="font-family: var(--font-mono); font-size: 0.8rem; opacity: 0.5;">BUILT WITH VITE + VANILLA JS
+                </p>
             </div>
             <div class="social-links" style="display: flex; gap: 2rem;">
-                <a href="https://www.linkedin.com/in/paulo-alexandre-ferreira/" target="_blank" class="headline" style="font-size: 1rem; margin: 0;">LINKEDIN</a>
-                <a href="https://wa.me/5551998240505" target="_blank" class="headline" style="font-size: 1rem; margin: 0;">WHATSAPP</a>
+                <a href="mailto:ferreira.alexandre@gmail.com" class="headline"
+                    style="font-size: 1rem; margin: 0; display: flex; align-items: center; gap: 0.5rem;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    EMAIL
+                </a>
+                <a href="https://www.linkedin.com/in/paulo-alexandre-ferreira/" target="_blank" class="headline"
+                    style="font-size: 1rem; margin: 0; display: flex; align-items: center; gap: 0.5rem;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                    LINKEDIN
+                </a>
             </div>
+
+
+
         </div>
     </footer>
 
     <script type="module" src="main.js"></script>
 </body>
+
 </html>

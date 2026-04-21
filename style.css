@@ -24,7 +24,9 @@ body {
   overflow-x: hidden;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   text-transform: uppercase;
   font-weight: 900;
 }
@@ -111,6 +113,15 @@ section {
 }
 
 /* Experience */
+.exp-grid,
+.skills-list,
+#education-list,
+#certifications-list,
+#courses-list,
+#languages-list {
+  margin-bottom: 6rem !important;
+}
+
 .exp-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -125,9 +136,12 @@ section {
 }
 
 .exp-card:hover {
-  background: var(--fg);
+  background: #ffffff;
   color: var(--bg);
+  transform: translateY(-5px);
+  box-shadow: 10px 10px 0 var(--accent);
 }
+
 
 .exp-card .period {
   font-family: var(--font-mono);
@@ -197,7 +211,37 @@ section {
 
 /* Responsive */
 @media (max-width: 768px) {
-  .hero h1 { font-size: 4rem; }
-  section { padding: 4rem 0; }
-  .section-title { font-size: 2rem; }
+  .hero h1 {
+    font-size: 4rem;
+  }
+
+  section {
+    padding: 4rem 0;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+}
+
+/* Language Switcher */
+.lang-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all 0.2s ease;
+  color: var(--fg);
+  font-weight: 700;
+}
+
+.lang-btn:hover {
+  opacity: 1;
+  color: var(--accent);
+}
+
+.lang-btn.active {
+  opacity: 1;
+  color: var(--accent);
 }
