@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Paulo Alexandre Ferreira</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #34495e;
+            --accent: #0070f3;
+            --text: #333;
+            --bg: #fff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background: #f0f2f5;
+            padding: 40px 0;
+        }
+
+        .resume-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--bg);
+            padding: 50px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        header {
+            border-bottom: 3px solid var(--accent);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            line-height: 1;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--accent);
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .contact-info {
+            display: flex;
+            gap: 20px;
+            font-size: 0.9rem;
+            color: var(--secondary);
+            flex-wrap: wrap;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            color: var(--primary);
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .exp-item {
+            margin-bottom: 20px;
+        }
+
+        .exp-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+
+        .exp-role {
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: var(--primary);
+        }
+
+        .exp-company {
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        .exp-period {
+            font-size: 0.85rem;
+            color: #777;
+            font-style: italic;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .tag {
+            background: #f0f0f0;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            color: #555;
+            border: 1px solid #ddd;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        .skill-category {
+            margin-bottom: 10px;
+        }
+
+        .skill-list {
+            list-style: none;
+            font-size: 0.9rem;
+        }
+
+        @media print {
+            @page {
+                margin: 20mm;
+            }
+            body {
+                padding: 0;
+                background: none;
+            }
+
+            .resume-container {
+                box-shadow: none;
+                padding: 20mm;
+                max-width: 100%;
+            }
+
+            .no-print {
+                display: none;
+            }
+        }
+
+        .btn-print {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 12px 24px;
+            background: var(--accent);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            z-index: 100;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="btn-print no-print" onclick="window.print()">SALVAR COMO PDF</button>
+
+    <div class="resume-container">
+        <header>
+            <h1>Paulo Alexandre Ferreira</h1>
+            <div class="subtitle">Senior Backend Developer</div>
+            <div class="contact-info">
+                <span>Email: ferreira.alexandre@gmail.com</span>
+                <span>LinkedIn: /paulo-alexandre-ferreira</span>
+                <span>Porto Alegre, RS</span>
+            </div>
+        </header>
+
+        <section>
+            <h2>Resumo Profissional</h2>
+            <p>Desenvolvedor Backend Sênior com mais de 20 anos de experiência (desde 2002) em arquitetura e
+                desenvolvimento de sistemas críticos. Especialista em ecossistema .NET, C# e Azure, com foco em soluções
+                de alta performance, escaláveis e de fácil manutenção.</p>
+        </section>
+
+        <section>
+            <h2>Experiência Profissional</h2>
+
+            <div class="exp-item">
+                <div class="exp-header">
+                    <span class="exp-role">Senior Backend Developer</span>
+                    <span class="exp-period">Ago 2021 - Atual</span>
+                </div>
+                <div class="exp-company">Quartile</div>
+                <p>Desenvolvimento de sistemas de larga escala com foco em arquiteturas serverless e gestão de banco de
+                    dados. Promovido a Sênior em Fev 2024.</p>
+                <div class="tags">
+                    <span class="tag">Azure Functions</span><span class="tag">C# / Python</span><span class="tag">SQL
+                        Server</span><span class="tag">.NET Core</span>
+                </div>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-header">
+                    <span class="exp-role">Proprietário</span>
+                    <span class="exp-period">Jun 2011 - Atual</span>
+                </div>
+                <div class="exp-company">Alfra Soluções em TI Ltda</div>
+                <p>Empresa focada em soluções de TI personalizadas, desenvolvimento especializado e consultoria técnica
+                    para diversos setores.</p>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-header">
+                    <span class="exp-role">Analista de Sistemas</span>
+                    <span class="exp-period">Ago 2017 - Jun 2021</span>
+                </div>
+                <div class="exp-company">Seal Sistemas e Tecnologia</div>
+                <p>Análise de requisitos e arquitetura de infraestrutura. Desenvolvimento Web e Desktop para gravação de
+                    audiências jurídicas.</p>
+                <div class="tags">
+                    <span class="tag">.NET</span><span class="tag">SQL Server</span><span
+                        class="tag">WindowsForms</span><span class="tag">PostgreSQL</span>
+                </div>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-header">
+                    <span class="exp-role">Analista de Sistemas</span>
+                    <span class="exp-period">Out 2014 - Ago 2017</span>
+                </div>
+                <div class="exp-company">Perto S.A.</div>
+                <p>Monitoramento de transações bancárias e automação financeira. Gestão de filas e bilhetagem eletrônica
+                    sob normas CMMI.</p>
+                <div class="tags">
+                    <span class="tag">Angular</span><span class="tag">Sencha Ext JS</span><span
+                        class="tag">Oracle</span><span class="tag">SQL Server</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Stack Tecnológica</h2>
+            <div class="skills-grid">
+                <div>
+                    <strong>Linguagens e Frameworks:</strong>
+                    <p>C#, .NET 8, Python, Web API, JavaScript, Angular, React, WindowsForms.</p>
+                </div>
+                <div>
+                    <strong>Infraestrutura e DB:</strong>
+                    <p>Azure Cloud, SQL Server, PostgreSQL, Oracle, Docker, Microservices.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Formação e Certificações</h2>
+
+            <p><strong>Bacharel em Sistemas de Informação</strong> - CNEC / Facensa (2012)</p>
+            <p style="margin-top: 10px; font-size: 0.9rem; color: #666;">
+                Certificações: Microsoft Windows IoT, Scrum Foundations (SFPC), DevOps Essentials (DEPC).
+            </p>
+        </section>
+
+        <section>
+            <h2>Idiomas</h2>
+            <p>Português (Nativo), Inglês (Avançado).</p>
+        </section>
+    </div>
+</body>
+
+</html>

@@ -9,31 +9,36 @@ export const content = {
       {
         role: "Senior Backend Developer",
         company: "Quartile",
-        period: "2024 - Present",
-        description: "Development of high-scale financial systems using .NET 8, Azure Services, and SQL Server. Focus on microservices architecture and cloud-native patterns.",
-        tags: [".NET 8", "C#", "Azure", "SQL Server", "Microservices"]
+        period: "Aug 2021 - Present",
+        description: "Promoted to Senior Backend Developer in Feb 2024. Working with high-scale systems, focusing on serverless architectures and database management.",
+        tags: ["Azure Functions", "C# / Python", "SQL Server", ".NET Core", "GIT"]
       },
+
       {
-        role: "Senior Backend Developer",
-        company: "Alfra Soluções",
-        period: "2023 - 2024",
-        description: "Implemented critical API infrastructures and legacy system migrations to modern .NET Core architectures.",
-        tags: [".NET Core", "Web API", "Azure", "Entity Framework"]
+        role: "Owner",
+
+        company: "Alfra Soluções em TI Ltda",
+        period: "Jun 2011 - Present",
+        description: "Founded Alfra Soluções to provide high-level IT solutions, specialized software development, and technical consulting for diverse business sectors.",
+        tags: ["Software Architecture", "Consulting", "Entrepreneurship", ".NET", "Azure"]
       },
+
       {
-        role: "Senior Developer",
-        company: "Seal Sistemas / Seal Telecom",
-        period: "2017 - 2023",
-        description: "Business analysis, requirements, deployment, and infrastructure definition. Developed Web and Desktop systems for court hearing recordings. Integrated with Active Directory, LDAP, and various databases.",
-        tags: ["SQL Server", "Integration", "Active Directory", ".NET", "PostgreSQL"]
+        role: "Systems Analyst",
+        company: "Seal Sistemas e Tecnologia",
+        period: "Aug 2017 - Jun 2021",
+        description: "Business analysis, requirements, and infrastructure definition. Developed Web and Desktop systems for recording hearings. Expert in database modeling (procedures, triggers) and AD/LDAP integration.",
+        tags: [".NET", "SQL Server", "Web API", "JavaScript", "WindowsForms", "PostgreSQL", "Oracle", "SVN"]
       },
+
       {
         role: "Systems Analyst",
         company: "Perto S.A.",
-        period: "2013 - 2017",
-        description: "Development of financial automation software and hardware integration for ATMs and POS systems. Managed Web systems for equipment monitoring and banking transactions.",
-        tags: ["Financial Systems", "Hardware Integration", "Agile", "C#", "Angular"]
+        period: "Oct 2014 - Aug 2017",
+        description: "Developed Web systems for banking transaction monitoring, queue management, and ticketing. Worked with agile methodologies, CMMI, and complex database modeling.",
+        tags: [".NET", "SQL Server", "Angular", "Sencha Ext JS", "Oracle", "JavaScript", "Web API", "SVN"]
       },
+
       {
         role: "Developer",
         company: "CWI Software",
@@ -52,12 +57,6 @@ export const content = {
         year: "2012"
       }
     ],
-    certifications: [
-      { name: "MPN Competency: Windows IoT", issuer: "Microsoft", year: "2019" },
-      { name: "Scrum Foundations (SFPC)", issuer: "CertiProf", year: "2020" },
-      { name: "DevOps Essentials (DEPC)", issuer: "CertiProf", year: "2020" }
-    ],
-    courses: ["Docker (Udemy)", "Angular (Udemy)", "Advanced HTML", "C# Programming"],
     languages: [
       { name: "Portuguese", level: "Native" },
       { name: "English", level: "Advanced" }
@@ -66,9 +65,8 @@ export const content = {
       experience: "Experience",
       skills: "Skills",
       education: "Education",
-      certifications: "Certifications",
-      courses: "Courses",
-      languages: "Languages"
+      languages: "Languages",
+      resume: "RESUME"
     }
   },
   pt: {
@@ -79,33 +77,38 @@ export const content = {
 
     experience: [
       {
-        role: "Desenvolvedor Backend Sênior",
+        role: "Senior Backend Developer",
         company: "Quartile",
-        period: "2024 - Atual",
-        description: "Desenvolvimento de sistemas financeiros de larga escala utilizando .NET 8, Azure Services e SQL Server. Foco em arquitetura de microsserviços e padrões cloud-native.",
-        tags: [".NET 8", "C#", "Azure", "SQL Server", "Microsserviços"]
+        period: "Ago 2021 - Atual",
+        description: "Promovido a Senior Backend Developer em Fev 2024. Atuação em sistemas de larga escala, focado em arquiteturas serverless e gestão de banco de dados.",
+        tags: ["Azure Functions", "C# / Python", "SQL Server", ".NET Core", "GIT"]
       },
+
       {
-        role: "Desenvolvedor Backend Sênior",
-        company: "Alfra Soluções",
-        period: "2023 - 2024",
-        description: "Implementação de infraestruturas críticas de API e migrações de sistemas legados para arquiteturas modernas em .NET Core.",
-        tags: [".NET Core", "Web API", "Azure", "Entity Framework"]
+        role: "Proprietário",
+
+        company: "Alfra Soluções em TI Ltda",
+        period: "Jun 2011 - Atual",
+        description: "Empresa criada para atender Soluções em TI, focada em desenvolvimento de software especializado e consultoria técnica.",
+        tags: ["Arquitetura de Software", "Consultoria", "Empreendedorismo", ".NET", "Azure"]
       },
+
       {
-        role: "Desenvolvedor Sênior",
-        company: "Seal Sistemas / Seal Telecom",
-        period: "2017 - 2023",
-        description: "Análise de negócio, requisitos, implantação e definição de infraestrutura. Desenvolvimento de sistemas Web e Desktop para gravação de audiências. Integração com Active Directory, LDAP e diversos bancos de dados.",
-        tags: ["SQL Server", "Integração", "Active Directory", ".NET", "PostgreSQL"]
+        role: "Analista de Sistemas",
+        company: "Seal Sistemas e Tecnologia",
+        period: "Ago 2017 - Jun 2021",
+        description: "Análise de negócio, requisitos e definição de infraestrutura. Desenvolvimento Web e Desktop para gravação de audiências. Especialista em modelagem de dados (procedures, triggers) e integração com AD/LDAP.",
+        tags: [".NET", "SQL Server", "Web API", "JavaScript", "WindowsForms", "PostgreSQL", "Oracle", "SVN"]
       },
+
       {
         role: "Analista de Sistemas",
         company: "Perto S.A.",
-        period: "2013 - 2017",
-        description: "Desenvolvimento de software de automação financeira e integração de hardware para ATMs e sistemas de POS. Gestão de sistemas Web para monitoramento de equipamentos e transações bancárias.",
-        tags: ["Sistemas Financeiros", "Integração de Hardware", "Agile", "C#", "Angular"]
+        period: "Out 2014 - Ago 2017",
+        description: "Desenvolvimento de sistemas Web para monitoramento de transações bancárias, gestão de filas e bilhetagem. Atuação com metodologias ágeis, CMMI e modelagem complexa de dados.",
+        tags: [".NET", "SQL Server", "Angular", "Sencha Ext JS", "Oracle", "JavaScript", "Web API", "SVN"]
       },
+
       {
         role: "Desenvolvedor",
         company: "CWI Software",
@@ -124,12 +127,6 @@ export const content = {
         year: "2012"
       }
     ],
-    certifications: [
-      { name: "MPN Competency: Windows IoT", issuer: "Microsoft", year: "2019" },
-      { name: "Scrum Foundations (SFPC)", issuer: "CertiProf", year: "2020" },
-      { name: "DevOps Essentials (DEPC)", issuer: "CertiProf", year: "2020" }
-    ],
-    courses: ["Docker (Udemy)", "Angular (Udemy)", "HTML Avançado", "Programação C#"],
     languages: [
       { name: "Português", level: "Nativo" },
       { name: "Inglês", level: "Avançado" }
@@ -140,7 +137,8 @@ export const content = {
       education: "Formação",
       certifications: "Certificações",
       courses: "Cursos",
-      languages: "Idiomas"
+      languages: "Idiomas",
+      resume: "CURRÍCULO"
     }
   },
   social: {

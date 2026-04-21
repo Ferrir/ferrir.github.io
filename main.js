@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const render = (lang) => {
         const data = content[lang];
-        
+
         // Update Hero
         document.getElementById('hero-headline').textContent = data.headline;
         document.getElementById('user-summary').textContent = data.summary;
@@ -14,9 +14,13 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('title-experience').textContent = data.sections.experience;
         document.getElementById('title-skills').textContent = data.sections.skills;
         document.getElementById('title-education').textContent = data.sections.education;
-        document.getElementById('title-certifications').textContent = data.sections.certifications;
-        document.getElementById('title-courses').textContent = data.sections.courses;
         document.getElementById('title-languages').textContent = data.sections.languages;
+
+        // Update Resume Link
+        const resumeLink = document.getElementById('resume-link');
+        const resumeText = document.getElementById('resume-text');
+        resumeText.textContent = data.sections.resume;
+        resumeLink.href = currentLang === 'pt' ? 'curriculo.html' : 'resume.html';
 
         // Inject Experience
         const expGrid = document.getElementById('experience-grid');
@@ -60,29 +64,6 @@ document.addEventListener('DOMContentLoaded', () => {
             eduList.appendChild(item);
         });
 
-        // Inject Certifications
-        const certList = document.getElementById('certifications-list');
-        certList.innerHTML = '';
-        data.certifications.forEach(cert => {
-            const card = document.createElement('div');
-            card.className = 'exp-card reveal active';
-            card.innerHTML = `
-                <div class="period">${cert.year}</div>
-                <h3>${cert.name}</h3>
-                <div class="company">${cert.issuer}</div>
-            `;
-            certList.appendChild(card);
-        });
-
-        // Inject Courses
-        const coursesList = document.getElementById('courses-list');
-        coursesList.innerHTML = '';
-        data.courses.forEach(course => {
-            const item = document.createElement('div');
-            item.className = 'skill-item reveal active';
-            item.textContent = course;
-            coursesList.appendChild(item);
-        });
 
         // Inject Languages
         const langList = document.getElementById('languages-list');
