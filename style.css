@@ -138,7 +138,7 @@ section {
 }
 
 .exp-card:hover {
-  background: #ffffff;
+  background: #f0f0f0;
   color: var(--bg);
   transform: translateY(-5px);
   box-shadow: 10px 10px 0 var(--accent);
@@ -190,13 +190,15 @@ section {
   border: var(--border);
   padding: 1rem 2rem;
   cursor: pointer;
-  transition: transform 0.2s;
+  transition: all 0.3s ease;
 }
 
 .skill-item:hover {
-  transform: scale(1.05);
-  background: var(--accent);
-  border-color: var(--accent);
+  background: #f0f0f0;
+  color: var(--bg);
+  transform: translateY(-5px);
+  box-shadow: 10px 10px 0 var(--accent);
+  border-color: #f0f0f0;
 }
 
 /* Animations */
