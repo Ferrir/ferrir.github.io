@@ -40,12 +40,13 @@ export const content = {
       },
 
       {
-        role: "Developer",
+        role: "Analyst Developer",
         company: "CWI Software",
-        period: "2009 - 2013",
-        description: "Outsourced development for large-scale enterprise applications, focusing on credit capture and report management. Followed strict TDD and Agile methodologies.",
-        tags: ["Agile", "TDD", "Enterprise Software", "C#", "SQL Server"]
+        period: "Aug 2009 - Oct 2014",
+        description: "Business analysis and infrastructure definition. Developed Web applications for credit capture, reporting, and Desktop systems for Call Centers. Worked with TDD, Agile, and CMMI.",
+        tags: [".NET", "SQL Server", "Visual Basic", "Oracle", "JavaScript", "Web Service", "SVN"]
       }
+
     ],
     skills: [
       "C# / .NET", "Azure Cloud", "SQL Server", "Microservices", "Unit Testing", "CI/CD", "REST APIs", "Docker", "Angular / React"
@@ -110,12 +111,13 @@ export const content = {
       },
 
       {
-        role: "Desenvolvedor",
+        role: "Analista Desenvolvedor",
         company: "CWI Software",
-        period: "2009 - 2013",
-        description: "Desenvolvimento terceirizado para aplicações empresariais de grande escala, com foco em captura de crédito e gerenciamento de relatórios. Metodologias TDD e Agile.",
-        tags: ["Agile", "TDD", "Software Empresarial", "C#", "SQL Server"]
+        period: "Ago 2009 - Out 2014",
+        description: "Análise de negócio e definição de infraestrutura. Desenvolvimento Web para captura de crédito, gerenciamento de relatórios e sistemas Desktop para Call Center. Atuação com TDD, Agile e CMMI.",
+        tags: [".NET", "SQL Server", "Visual Basic", "Oracle", "JavaScript", "Web Service", "SVN"]
       }
+
     ],
     skills: [
       "C# / .NET", "Azure Cloud", "SQL Server", "Microsserviços", "Testes Unitários", "CI/CD", "REST APIs", "Docker", "Angular / React"

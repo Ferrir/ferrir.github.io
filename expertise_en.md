@@ -12,7 +12,7 @@ Senior Backend Developer with over 20 years of experience (since 2002) in archit
 ### Cloud e Infraestrutura
 - **Cloud**: Azure (Services, Functions, Cloud-native patterns)
 - **Architecture**: Microservices, Serverless, Enterprise Software
-- **CI/CD & Tools**: GIT, SVN, Docker, Unit Testing, TDD, Agile/Scrum, CMMI
+- **CI/CD and Tools**: GIT, SVN, Docker, Unit Testing, TDD, Agile/Scrum, CMMI
 
 ### Databases
 - **Expertise**: SQL Server (Modeling, Stored Procedures, Triggers, Views, Functions)
@@ -20,7 +20,7 @@ Senior Backend Developer with over 20 years of experience (since 2002) in archit
 
 ---
 
-## 💼 Destaques da Carreira
+## 💼 Career Highlights
 
 ### Senior Backend Developer | Quartile (2021 - Present)
 - Specialized in high-scale systems and serverless architectures using **Azure Functions**.
@@ -40,20 +40,20 @@ Senior Backend Developer with over 20 years of experience (since 2002) in archit
 - Worked under CMMI standards and Agile methodologies.
 - Tech: .NET, Angular, Sencha Ext JS, SQL Server, Oracle, SVN.
 
-### Analista Desenvolvedor | CWI Software (2009 - 2014)
-- Análise de negócio e definição de infraestrutura junto ao cliente.
-- Desenvolvimento Web para captura de crédito e gerenciamento de relatórios.
-- Desenvolvimento Desktop para sistemas de Call Center.
+### Analyst Developer | CWI Software (2009 - 2014)
+- Business analysis and infrastructure definition in collaboration with clients.
+- Web development for credit capture and report management.
+- Desktop development for Call Center systems.
 - Tech: .NET, Visual Basic, HTML, CSS, JavaScript, SQL Server, Oracle, Web Service, SVN.
 
 ---
 
-## 🎓 Formação
+## 🎓 Education
 - **Bachelor in Information Systems**: CNEC / Facensa (2012)
 
 ---
 
-## 🌐 Idiomas
+## 🌐 Languages
 - **Portuguese**: Native
 - **English**: Advanced
 
