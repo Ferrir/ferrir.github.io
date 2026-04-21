@@ -53,7 +53,7 @@ export const content = {
   education: [
     {
       degree: "Sistemas de Informação",
-      institution: "CNEC",
+      institution: "CNEC-Facensa",
       year: "2012"
     }
   ],
