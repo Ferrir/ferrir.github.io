@@ -252,8 +252,17 @@ section {
     font-size: 1rem;
   }
 
-  .contact-links {
-    display: none !important; /* Hide contact links in header on very small screens if it gets too crowded, or just let them wrap */
+  .nav-label, #resume-text {
+    display: none !important;
+  }
+
+  nav > div {
+    gap: 1rem !important;
+  }
+
+  #resume-link {
+    min-width: auto !important;
+    padding: 0.5rem !important;
   }
 }
 
