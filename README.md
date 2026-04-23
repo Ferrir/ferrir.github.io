@@ -9,6 +9,7 @@ A high-performance, professional landing page built with a **Brutalist aesthetic
 ## ✨ Features
 
 - **Bilingual Support**: Full toggle between Portuguese and English with persistent state via `localStorage`.
+- **Light/Dark Mode**: High-contrast brutalist light mode with persistence and `Alt + T` keyboard shortcut.
 - **Print-Ready Resumes**: Dedicated pages (`curriculo.html` and `resume.html`) optimized with CSS media queries and `@page` margins for perfect "Save to PDF" output.
 - **Brutalist Design**: Unique visual identity using "Neon Blue" highlights, solid shadows, and clean typography (Inter & JetBrains Mono).
 - **Responsive & Interactive**: Smooth reveal animations and "lift-and-shadow" hover effects on experience and skill cards.
