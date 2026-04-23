@@ -22,16 +22,22 @@ document.addEventListener('DOMContentLoaded', () => {
         resumeText.textContent = data.sections.resume;
         resumeLink.href = currentLang === 'pt' ? 'curriculo.html' : 'resume.html';
 
+        // Update Profile Image (Hardcoded for now as per generation)
+        const profileImg = document.getElementById('profile-img');
+        if (profileImg) {
+            profileImg.src = 'profile_headshot_1776945133291.png';
+        }
+
         // Inject Experience
         const expGrid = document.getElementById('experience-grid');
         expGrid.innerHTML = '';
         data.experience.forEach(exp => {
             const card = document.createElement('div');
-            card.className = 'exp-card reveal active';
+            card.className = 'card reveal active';
             card.innerHTML = `
-                <div class="period">${exp.period}</div>
+                <span class="period">${exp.period}</span>
                 <h3>${exp.role}</h3>
-                <div class="company">${exp.company}</div>
+                <span class="company">${exp.company}</span>
                 <p>${exp.description}</p>
                 <div class="tags">
                     ${exp.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
@@ -55,11 +61,11 @@ document.addEventListener('DOMContentLoaded', () => {
         eduList.innerHTML = '';
         data.education.forEach(edu => {
             const item = document.createElement('div');
-            item.className = 'reveal active';
-            item.style.marginBottom = '2rem';
+            item.className = 'card reveal active';
             item.innerHTML = `
-                <h3 style="font-size: 2rem;">${edu.degree}</h3>
-                <p style="font-family: var(--font-mono); color: var(--accent);">${edu.institution} | ${edu.year}</p>
+                <span class="period">${edu.year}</span>
+                <h3>${edu.degree}</h3>
+                <span class="company">${edu.institution}</span>
             `;
             eduList.appendChild(item);
         });
