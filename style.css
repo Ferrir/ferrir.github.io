@@ -435,11 +435,9 @@ body.light-mode .contact-bar {
 
   .hexagon-wrapper {
     order: -1 !important;
-    width: min(240px, 100%) !important;
-    max-width: 240px !important;
-    aspect-ratio: 10 / 9 !important;
-    height: auto !important;
-    margin: 0 auto var(--space-md) 0 !important;
+    width: 240px !important;
+    height: 270px !important;
+    margin: 0 0 var(--space-md) 0 !important;
   }
 
   .contact-bar-inner {
