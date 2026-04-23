@@ -110,5 +110,43 @@ document.addEventListener('DOMContentLoaded', () => {
     }, observerOptions);
 
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // --- Theme Management ---
+    const themeToggle = document.getElementById('theme-toggle');
+    const darkIcon = document.getElementById('theme-icon-dark');
+    const lightIcon = document.getElementById('theme-icon-light');
+    
+    const setTheme = (theme) => {
+        if (theme === 'light') {
+            document.body.classList.add('light-mode');
+            darkIcon.style.display = 'none';
+            lightIcon.style.display = 'block';
+        } else {
+            document.body.classList.remove('light-mode');
+            darkIcon.style.display = 'block';
+            lightIcon.style.display = 'none';
+        }
+        localStorage.setItem('theme', theme);
+    };
+
+    const toggleTheme = () => {
+        const isLight = document.body.classList.contains('light-mode');
+        setTheme(isLight ? 'dark' : 'light');
+    };
+
+    // Initialize Theme
+    const savedTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+    setTheme(savedTheme);
+
+    // Event Listeners
+    themeToggle.addEventListener('click', toggleTheme);
+
+    // Keyboard Shortcut (Alt + T)
+    window.addEventListener('keydown', (e) => {
+        if (e.altKey && e.key.toLowerCase() === 't') {
+            e.preventDefault();
+            toggleTheme();
+        }
+    });
 });
 

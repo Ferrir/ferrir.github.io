@@ -4,12 +4,21 @@
   --bg: #080808;
   --fg: #f5f5f5;
   --accent: #00f3ff;
-
-
   --border: 2px solid #f5f5f5;
   --font-sans: 'Inter', system-ui, sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
+  
+  /* Smooth transition for theme variables */
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
+
+body.light-mode {
+  --bg: #ffffff;
+  --fg: #000000;
+  --accent: #0080ff; /* Darker blue for better visibility on white */
+  --border: 2px solid #000000;
+}
+
 
 * {
   margin: 0;
@@ -138,7 +147,7 @@ section {
 }
 
 .exp-card:hover {
-  background: #f0f0f0;
+  background: var(--fg);
   color: var(--bg);
   transform: translateY(-5px);
   box-shadow: 10px 10px 0 var(--accent);
@@ -194,11 +203,11 @@ section {
 }
 
 .skill-item:hover {
-  background: #f0f0f0;
+  background: var(--fg);
   color: var(--bg);
   transform: translateY(-5px);
   box-shadow: 10px 10px 0 var(--accent);
-  border-color: #f0f0f0;
+  border-color: var(--fg);
 }
 
 /* Animations */
