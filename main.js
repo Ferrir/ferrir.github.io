@@ -35,9 +35,11 @@ document.addEventListener('DOMContentLoaded', () => {
             const item = document.createElement('div');
             item.className = 'timeline-item reveal active';
             item.innerHTML = `
-                <span class="period">${exp.period}</span>
-                <h3>${exp.role}</h3>
-                <span class="company">${exp.company}</span>
+                <div class="timeline-header">
+                    <span class="period">${exp.period}</span>
+                    <h3>${exp.role}</h3>
+                    <span class="company">${exp.company}</span>
+                </div>
                 <p>${exp.description}</p>
             `;
             expGrid.appendChild(item);
@@ -60,9 +62,11 @@ document.addEventListener('DOMContentLoaded', () => {
             const item = document.createElement('div');
             item.className = 'timeline-item reveal active';
             item.innerHTML = `
-                <span class="period">${edu.year}</span>
-                <h3>${edu.degree}</h3>
-                <span class="company">${edu.institution}</span>
+                <div class="timeline-header">
+                    <span class="period">${edu.year}</span>
+                    <h3>${edu.degree}</h3>
+                    <span class="company">${edu.institution}</span>
+                </div>
             `;
             eduList.appendChild(item);
         });

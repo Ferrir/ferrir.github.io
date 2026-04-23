@@ -34,6 +34,7 @@ body.light-mode {
   --surface-hover: #f1f5f9;
   --text-muted: #64748b;
   --border-color: rgba(180, 83, 9, 0.2);
+  background: var(--bg);
 }
 
 * {
@@ -43,7 +44,8 @@ body.light-mode {
 }
 
 body {
-  background-color: var(--bg);
+  background: radial-gradient(circle at 50% -20%, #1e2f38 0%, #16242c 80%);
+  background-attachment: fixed;
   color: var(--fg);
   font-family: var(--font-sans);
   line-height: 1.6;
@@ -186,17 +188,16 @@ nav {
 /* Main Two-Column Layout */
 .main-grid {
   display: grid;
-  grid-template-columns: 280px 1px 1fr;
+  grid-template-columns: 2px 280px 2px 1fr;
   gap: var(--space-xl);
   padding: var(--space-xl) 0;
-  align-items: start;
+  align-items: stretch;
 }
 
 .column-divider {
-  background: rgba(255, 255, 255, 0.1);
-  width: 1px;
+  background: var(--border-color);
+  width: 2px;
   height: 100%;
-  min-height: 800px;
 }
 
 .column-title {
@@ -249,23 +250,21 @@ nav {
   background: none !important;
   padding: 0;
   border: none;
-  border-left: 2px solid var(--border-color);
-  padding-left: var(--space-lg);
+  padding-left: 0;
   border-radius: 0;
   transition: var(--transition);
   box-shadow: none !important;
 }
 
-.timeline-item:hover {
-  border-left-color: var(--accent);
-  background: none !important;
-  box-shadow: none !important;
-  transform: none !important;
+.timeline-header {
+  border-left: 2px solid var(--border-color);
+  padding-left: var(--space-lg);
+  margin-bottom: var(--space-sm);
+  transition: var(--transition);
 }
 
-.timeline-item * {
-  background: transparent !important;
-  box-shadow: none !important;
+.timeline-item:hover .timeline-header {
+  border-left-color: var(--accent);
 }
 
 .timeline-item .period {
@@ -288,10 +287,10 @@ nav {
   opacity: 0.9;
   font-size: 1rem;
   display: block;
-  margin-bottom: 1.5rem;
 }
 
 .timeline-item p {
+  padding-left: var(--space-lg);
   font-size: 1rem;
   color: var(--text-muted);
   line-height: 1.8;
@@ -302,6 +301,7 @@ nav {
     grid-template-columns: 1fr;
     gap: var(--space-lg);
   }
+
   .column-divider {
     display: none;
   }
@@ -309,11 +309,14 @@ nav {
 
 /* Contact Bar Component */
 .contact-bar {
-  background: var(--accent);
-  color: #1a1a1a;
+  background: linear-gradient(90deg,
+      var(--accent) 0%,
+      #e8c684 100%);
+  color: var(--bg);
   padding: 1.2rem 0;
   border-bottom: 5px solid rgba(0, 0, 0, 0.1);
-  margin-top: -2rem; /* Pull up closer to hero */
+  margin-top: -2rem;
+  /* Pull up closer to hero */
   position: relative;
   z-index: 10;
 }
@@ -347,8 +350,10 @@ nav {
 }
 
 body.light-mode .contact-bar {
-  background: var(--accent);
-  color: #fff;
+  background: linear-gradient(90deg,
+      var(--accent) 0%,
+      #f3d9a7 100%);
+  color: var(--fg);
 }
 
 /* Animations */
