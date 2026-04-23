@@ -235,6 +235,26 @@ section {
   .section-title {
     font-size: 2rem;
   }
+
+  nav {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  nav > div {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    font-size: 1rem;
+  }
+
+  .contact-links {
+    display: none !important; /* Hide contact links in header on very small screens if it gets too crowded, or just let them wrap */
+  }
 }
 
 /* Language Switcher */
