@@ -266,10 +266,10 @@ section {
   }
 
   footer .container {
-    flex-direction: column !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
     align-items: center !important;
-    text-align: center;
-    gap: 2rem;
+    gap: 1rem;
   }
 
   footer .social-links {
