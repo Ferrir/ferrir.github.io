@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Update Profile Image
         const profileImg = document.getElementById('profile-img');
         if (profileImg) {
-            profileImg.src = 'paulo.jpg';
+            profileImg.src = '/paulo.jpg';
         }
 
         // Inject Experience
