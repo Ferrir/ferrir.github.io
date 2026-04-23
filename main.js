@@ -22,10 +22,10 @@ document.addEventListener('DOMContentLoaded', () => {
         resumeText.textContent = data.sections.resume;
         resumeLink.href = currentLang === 'pt' ? 'curriculo.html' : 'resume.html';
 
-        // Update Profile Image (Hardcoded for now as per generation)
+        // Update Profile Image
         const profileImg = document.getElementById('profile-img');
         if (profileImg) {
-            profileImg.src = 'profile_headshot_1776945133291.png';
+            profileImg.src = 'paulo.jpg';
         }
 
         // Inject Experience
@@ -39,9 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 <h3>${exp.role}</h3>
                 <span class="company">${exp.company}</span>
                 <p>${exp.description}</p>
-                <div class="tags">
-                    ${exp.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
-                </div>
             `;
             expGrid.appendChild(card);
         });
