@@ -264,6 +264,17 @@ section {
     min-width: auto !important;
     padding: 0.5rem !important;
   }
+
+  footer .container {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  footer .social-links {
+    justify-content: center;
+  }
 }
 
 /* Language Switcher */
