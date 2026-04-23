@@ -441,15 +441,28 @@ body.light-mode .contact-bar {
   }
 
   .contact-bar-inner {
-    flex-wrap: wrap !important;
+    flex-wrap: nowrap !important;
     justify-content: center !important;
-    gap: 1.5rem !important;
+    gap: 1rem !important;
+    overflow-x: auto !important;
+    padding-bottom: 0.5rem !important;
   }
 
   .contact-group {
-    flex-wrap: wrap !important;
+    flex-wrap: nowrap !important;
     justify-content: center !important;
-    gap: 1rem !important;
+    gap: 0.75rem !important;
+    min-width: 0 !important;
+  }
+
+  .contact-item {
+    flex-shrink: 1 !important;
+    min-width: 0 !important;
+    white-space: nowrap !important;
+  }
+
+  .contact-item span {
+    display: none !important;
   }
 
   .timeline-header {
