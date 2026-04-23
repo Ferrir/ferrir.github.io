@@ -7,107 +7,22 @@
     <title>Paulo Alexandre Ferreira | Senior Backend Developer</title>
     <meta name="description"
         content="Portfolio profissional de Paulo Alexandre Ferreira, desenvolvedor backend sênior especialista em .NET, C# e Azure.">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=1.0.1">
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <nav>
-                <div class="logo">PAULO_ALEXANDRE_FERREIRA.EXE</div>
-                <div style="display: flex; align-items: center; gap: 2rem;">
-                    <div class="lang-switcher" style="display: flex; gap: 0.8rem; align-items: center;">
-                        <button id="btn-en" class="lang-btn active" title="English">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 60 30">
-                                <path d="M0,0 v30 h60 v-30 z" fill="#012169" />
-                                <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6" />
-                                <path d="M0,0 L60,30 M60,0 L0,30" stroke="#C8102E" stroke-width="4" />
-                                <path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10" />
-                                <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6" />
-                            </svg>
-                        </button>
-                        <button id="btn-pt" class="lang-btn" title="Português">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 720 504">
-                                <rect width="720" height="504" fill="#009c3b" />
-                                <path d="M360 72L648 252 360 432 72 252z" fill="#ffdf00" />
-                                <circle cx="360" cy="252" r="105" fill="#002776" />
-                                <path
-                                    d="M255 252c0 58 47 105 105 105s105-47 105-105c0-11-2-21-5-31-31 16-67 25-105 25s-74-9-105-25c-3 10-5 20-5 31z"
-                                    fill="#fff" />
-                            </svg>
-                        </button>
-                    <div class="theme-switcher" style="margin-left: 1rem;">
-                        <button id="theme-toggle" class="lang-btn" title="Toggle Theme (Alt+T)" style="opacity: 1; display: flex; align-items: center; justify-content: center;">
-                            <!-- Moon Icon (Dark Mode Default) -->
-                            <svg id="theme-icon-dark" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                            </svg>
-                            <!-- Sun Icon (Light Mode) -->
-                            <svg id="theme-icon-light" style="display: none;" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <circle cx="12" cy="12" r="5"></circle>
-                                <line x1="12" y1="1" x2="12" y2="3"></line>
-                                <line x1="12" y1="21" x2="12" y2="23"></line>
-                                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                                <line x1="1" y1="12" x2="3" y2="12"></line>
-                                <line x1="21" y1="12" x2="23" y2="12"></line>
-                                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                            </svg>
-                        </button>
-                    </div>
-                    <a id="resume-link" href="#" target="_blank" class="headline"
-                        style="font-size: 0.8rem; margin: 0; display: flex; align-items: center; gap: 0.5rem; color: var(--accent); min-width: 130px;">
-
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M6 9V2h12v7" />
-                            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
-                            <rect x="6" y="14" width="12" height="8" />
-                        </svg>
-                        <span id="resume-text">CURRÍCULO</span>
-                    </a>
-
-                    <div class="contact-links" style="display: flex; gap: 1.5rem;">
-                        <a href="mailto:ferreira.alexandre@gmail.com" class="headline"
-                            style="font-size: 0.8rem; margin: 0; display: flex; align-items: center; gap: 0.5rem;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                                <polyline points="22,6 12,13 2,6" />
-                            </svg>
-                            <span class="nav-label">EMAIL</span>
-                        </a>
-                        <a href="https://www.linkedin.com/in/paulo-alexandre-ferreira/" target="_blank" class="headline"
-                            style="font-size: 0.8rem; margin: 0; display: flex; align-items: center; gap: 0.5rem;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <path
-                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-                                <rect x="2" y="9" width="4" height="12" />
-                                <circle cx="4" cy="4" r="2" />
-                            </svg>
-                            <span class="nav-label">LINKEDIN</span>
-                        </a>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </header>
 
     <main>
         <section class="hero container">
             <div class="hexagon-wrapper reveal">
                 <div class="hexagon">
                     <div class="hexagon-inner">
-                        <img id="profile-img" src="" alt="Paulo Alexandre Ferreira">
+                        <img id="profile-img" src="" alt="Paulo Ferreira">
                     </div>
                 </div>
             </div>
             <div class="hero-content">
-                <h1 id="user-name" class="reveal">PAULO<br>ALEXANDRE<br>FERREIRA</h1>
+                <h1 id="user-name" class="reveal">PAULO <span class="last-name">FERREIRA</span></h1>
                 <div id="hero-headline" class="headline reveal" style="font-size: 1.5rem; margin-top: -1rem;">SENIOR BACKEND DEVELOPER</div>
                 <div class="profile-section reveal" style="margin-top: 2rem;">
                     <div class="profile-title" style="font-family: var(--font-mono); color: var(--accent); font-size: 0.9rem; letter-spacing: 0.2em; margin-bottom: 0.5rem;">PROFILE</div>
@@ -116,56 +31,94 @@
             </div>
         </section>
 
-        <!-- Contact Info Bar -->
         <div class="contact-bar">
             <div class="container contact-bar-inner">
-                <div class="contact-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                    <span>Porto Alegre, RS - Brasil</span>
+                <div class="contact-group">
+                    <div class="lang-switcher" style="display: flex; gap: 0.8rem;">
+                        <button id="btn-en" class="lang-btn active" title="English">
+                            <img src="https://flagcdn.com/w20/gb.png" alt="English">
+                        </button>
+                        <button id="btn-pt" class="lang-btn" title="Portuguese">
+                            <img src="https://flagcdn.com/w20/br.png" alt="Portuguese">
+                        </button>
+                    </div>
+                    <button id="theme-toggle" aria-label="Toggle Theme" style="color: inherit; background: none; border: none; cursor: pointer; margin-left: 1rem;">
+                        <svg id="theme-icon-dark" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                        <svg id="theme-icon-light" style="display: none;" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                    </button>
                 </div>
-                <div class="contact-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l2.28-2.28a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                    <span>+55 51 99824-0505</span>
-                </div>
-                <div class="contact-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                    <span>ferreira.alexandre@gmail.com</span>
+
+                <div class="contact-group">
+                    <a href="mailto:ferreira.alexandre@gmail.com" class="contact-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        <span>EMAIL</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/paulo-alexandre-ferreira/" target="_blank" class="contact-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        <span>LINKEDIN</span>
+                    </a>
+                    <a href="resume.html" id="resume-link" class="contact-item" style="padding: 0.2rem 0.6rem;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9" /><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" /><rect x="6" y="14" width="12" height="8" /></svg>
+                        <span id="resume-text">CURRÍCULO</span>
+                    </a>
                 </div>
             </div>
         </div>
 
-        <section id="experience" class="container">
-            <h2 id="title-experience" class="section-title reveal">EXPERIÊNCIA</h2>
-            <div id="experience-grid" class="card-grid">
-                <!-- Injected via JS -->
-            </div>
-        </section>
+        <div class="main-grid container">
+            <!-- Left Column: Skills & Info -->
+            <aside class="sidebar-column">
+                <section id="skills" class="reveal">
+                    <h2 id="title-skills" class="column-title">COMPETÊNCIAS</h2>
+                    <div id="skills-list" class="skills-stack">
+                        <!-- Injected via JS -->
+                    </div>
+                </section>
 
-        <section id="skills" class="container">
-            <h2 id="title-skills" class="section-title reveal">COMPETÊNCIAS</h2>
-            <div id="skills-list" class="skills-list">
-                <!-- Injected via JS -->
-            </div>
-        </section>
+                <section id="languages" class="reveal">
+                    <h2 id="title-languages" class="column-title">IDIOMAS</h2>
+                    <div id="languages-list" class="skills-stack">
+                        <!-- Injected via JS -->
+                    </div>
+                </section>
+            </aside>
 
-        <section id="education" class="container" style="border-bottom: none;">
-            <h2 id="title-education" class="section-title reveal">FORMAÇÃO</h2>
-            <div id="education-list" class="card-grid">
-                <!-- Injected via JS -->
-            </div>
-        </section>
+            <!-- Vertical Divider -->
+            <div class="column-divider"></div>
 
+            <!-- Right Column: Experience & Education -->
+            <div class="content-column">
+                <section id="experience" class="reveal">
+                    <h2 id="title-experience" class="column-title">EXPERIÊNCIA</h2>
+                    <div id="experience-grid" class="timeline-stack">
+                        <!-- Injected via JS -->
+                    </div>
+                </section>
 
-        <section id="languages" class="container" style="border-bottom: none;">
-            <h2 id="title-languages" class="section-title reveal">IDIOMAS</h2>
-            <div id="languages-list" class="skills-list">
-                <!-- Injected via JS -->
+                <section id="education" class="reveal">
+                    <h2 id="title-education" class="column-title">FORMAÇÃO</h2>
+                    <div id="education-list" class="timeline-stack">
+                        <!-- Injected via JS -->
+                    </div>
+                </section>
             </div>
-        </section>
+        </div>
     </main>
 
 
-    <footer style="padding: 4rem 0; border-top: var(--border);">
+    <footer style="padding: 4rem 0; border-top: 1px solid var(--border-color);">
         <div class="container" style="display: flex; justify-content: space-between; align-items: flex-end;">
             <div>
                 <p style="font-family: var(--font-mono); font-size: 0.8rem; opacity: 0.5;">© 2026 PAULO ALEXANDRE

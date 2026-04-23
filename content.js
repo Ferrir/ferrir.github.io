@@ -1,6 +1,6 @@
 export const content = {
   en: {
-    name: "Paulo Alexandre Ferreira",
+    name: "Paulo Ferreira",
     title: "Senior Backend Developer",
     headline: "SENIOR BACKEND DEVELOPER",
     summary: "Professional with over 20 years of experience (since 2002) in systems development. Expert in C#, .NET, and Azure, focused on delivering high-performance, scalable, and maintainable software solutions with a focus on client expectations and technical excellence.",
@@ -65,7 +65,7 @@ export const content = {
     }
   },
   pt: {
-    name: "Paulo Alexandre Ferreira",
+    name: "Paulo Ferreira",
     title: "Desenvolvedor Backend Sênior",
     headline: "SENIOR BACKEND DEVELOPER",
     summary: "Profissional com mais de 20 anos de experiência (desde 2002) em desenvolvimento de sistemas. Especialista em C#, .NET e Azure, focado na entrega de soluções de software de alto desempenho, escaláveis e de fácil manutenção, com foco na expectativa do cliente e excelência técnica.",

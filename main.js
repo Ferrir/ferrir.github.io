@@ -32,15 +32,15 @@ document.addEventListener('DOMContentLoaded', () => {
         const expGrid = document.getElementById('experience-grid');
         expGrid.innerHTML = '';
         data.experience.forEach(exp => {
-            const card = document.createElement('div');
-            card.className = 'card reveal active';
-            card.innerHTML = `
+            const item = document.createElement('div');
+            item.className = 'timeline-item reveal active';
+            item.innerHTML = `
                 <span class="period">${exp.period}</span>
                 <h3>${exp.role}</h3>
                 <span class="company">${exp.company}</span>
                 <p>${exp.description}</p>
             `;
-            expGrid.appendChild(card);
+            expGrid.appendChild(item);
         });
 
         // Inject Skills
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
         eduList.innerHTML = '';
         data.education.forEach(edu => {
             const item = document.createElement('div');
-            item.className = 'card reveal active';
+            item.className = 'timeline-item reveal active';
             item.innerHTML = `
                 <span class="period">${edu.year}</span>
                 <h3>${edu.degree}</h3>
@@ -80,24 +80,32 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Update Button States
         document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
-        document.getElementById(`btn-${lang}`).classList.add('active');
+        const activeBtn = document.getElementById(`btn-${lang}`);
+        if (activeBtn) activeBtn.classList.add('active');
     };
 
     // Initial Render
     render(currentLang);
 
     // Language Switchers
-    document.getElementById('btn-en').addEventListener('click', () => {
-        currentLang = 'en';
-        localStorage.setItem('lang', currentLang);
-        render(currentLang);
-    });
+    const btnEn = document.getElementById('btn-en');
+    const btnPt = document.getElementById('btn-pt');
 
-    document.getElementById('btn-pt').addEventListener('click', () => {
-        currentLang = 'pt';
-        localStorage.setItem('lang', currentLang);
-        render(currentLang);
-    });
+    if (btnEn) {
+        btnEn.addEventListener('click', () => {
+            currentLang = 'en';
+            localStorage.setItem('lang', currentLang);
+            render(currentLang);
+        });
+    }
+
+    if (btnPt) {
+        btnPt.addEventListener('click', () => {
+            currentLang = 'pt';
+            localStorage.setItem('lang', currentLang);
+            render(currentLang);
+        });
+    }
 
     // Reveal Animation on Scroll
     const observerOptions = {
